@@ -5,7 +5,7 @@ body
     justify-content:center;
     align-items: center;
     height:100vh;
-    background-color: rgb(185, 198, 159);
+    background-color: rgb(201, 201, 201);
 }
 
 #calculator
@@ -51,7 +51,7 @@ button
 
 .op
 {
-    background-color: rgb(157, 16, 11);
+    background-color: rgb(152, 48, 7);
 }
 
 .op:hover

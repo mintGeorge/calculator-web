@@ -1,23 +1,31 @@
 const display = document.getElementById("display");
 
-function appendToDisplay(input)
+function appendToDisplay(input) 
 {
     display.value += input;
 }
 
-function clearDisplay()
+function clearDisplay() 
 {
     display.value = "";
 }
 
-function calculate()
+function calculate() 
 {
-    try
+    try 
     {
-        display.value = eval(display.value);
-    }
-    catch(error)
+        let expression = display.value;
+        
+        expression = expression.replace(/%/g, "/100");
+        display.value = eval(expression);
+    } 
+    catch (error) 
     {
         display.value = "Error";
     }
+}
+
+function removeOneChar()
+{
+    display.value = display.value.slice(0, -1);
 }
